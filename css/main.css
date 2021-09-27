@@ -1,0 +1,105 @@
+/*Header */
+header{
+    background: #eb7000;
+    position: relative;
+    width: 1349px;
+    left: -8px;
+}
+.log img{
+    width: 100px;
+    position: relative;
+    left: 10px;
+}
+/* Formulário*/
+
+.formulario input{
+    height: 20px;
+    width: 210px;
+}
+.formulario h1{    
+    font-size: 15px;
+    margin: 10px 0px;
+
+}
+form button{
+    margin: 15px 0px;
+}
+/* Campo Sexo do Formulário*/
+.sex{
+    display: flex;
+}
+.sex input{
+    width: 30px;
+}
+.sex h1{
+    
+}
+/* Campos de Endereço e Número Formulário*/
+.endform {
+    display: flex;
+}
+
+.endformNumero input{
+    position: relative;
+    left: 80px;
+}
+.endformNumero h1 {
+    position: relative;
+    top: 35px;
+    left: 15px;
+}
+
+.logradform{
+    display: flex;
+}
+.logradform input {
+    margin: 8px 5px;
+}
+/* Redimensionando para Mobile*/
+@media (max-width: 576px) {
+    header{
+    background: #eb7000;
+    position: relative;
+    width: 104%;
+    left: -7px;
+    }
+.endformNumero h1 {
+    position: inherit;
+}
+.endformNumero input{
+    position: inherit;
+}
+.endform {
+    display: contents;
+}
+.logradform {
+    display: block;
+}
+.logradform input {
+    margin: 0px 0px;
+}
+}
+
+@media (max-width: 768px) {
+    header{
+        background: #eb7000;
+        position: relative;
+        width: 104%;
+        left: -7px;
+    }
+.endformNumero h1 {
+    position: inherit;
+}
+.endformNumero input{
+    position: inherit;
+}
+.endform {
+    display: contents;
+}
+.logradform {
+    display: block;
+}
+.logradform input {
+    margin: 0px 0px;
+}
+}

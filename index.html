@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/logo.PNG"/>
+</head>
+<body>
+    <header>
+    <div class="log">
+    <img src="img/logo.PNG" alt="logo"> 
+    </div>
+    </header> 
+    <h1>Formulário de Cadastro</h1>
+    <form class=" formulario" method="POST">
+    <h1>Nome: </h1>
+    <input type="text" id="nome" name="name" placeholder="Digite aqui (Obrigatório)"  required>
+    <br>
+    <h1>CPF: </h1>
+    <input type="text" id="cpf" name="cpf" placeholder="Digite aqui (Obrigatório)" class="form-control" onkeypress="$(this).mask('000.000.000-00');" required>
+    <br>
+    <h1>RG: </h1>
+    <input type="text" name="rg" placeholder="Digite aqui" class="form-control" onkeypress="$(this).mask('00.000.000-0');"> 
+    <br>
+    <h1>Sexo:</h1>
+        <div class="sex">
+            <input type="radio" name="Sexo" value="male"> <h1>Masculino</h1>
+            <br>
+            <input type="radio" name="Sexo" value="female"> <h1>Feminino</h1>
+        </div>
+        <br>
+        <div class="endform">
+            <span class="endformEndereco">
+            <h1>Endereço: </h1>
+            <input type="text" id="end" name="end" placeholder="Digite aqui (Obrigatório)" required>
+            </span>
+            <br>
+            <span class="endformNumero">
+            <h1>Número: </h1>
+            <input type="text" id="num" name="num" placeholder="Digite aqui (Obrigatório)" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"  required>
+            </sapn>
+            </div>    
+        <br>
+        <div class="logradform">
+            <h1>Bairro: </h1>
+            <input type="text" name="bairro" placeholder="Digite aqui" >
+            <br>
+            <h1>Cidade: </h1>
+            <input type="text" name="cidade" placeholder="Digite aqui" >
+            <br>
+            <h1>Estado:</h1>
+            <input type="text" name="estado" placeholder="Digite aqui" >
+            <br>
+        </div>
+    <h1>CEP:</h1>
+    <input type="text" name="cep" placeholder="Digite aqui" class="form-control" onkeypress="$(this).mask('00000-000')" >
+    <br>
+    <h1>Telefone Fixo:</h1>
+    <input type="text" name="telF" placeholder="Digite aqui" class="form-control" onkeypress="$(this).mask('(00) 0000-0000')" >   
+    <br>
+    <h1>Telefone Celular:</h1>
+    <input type="text" id="cel" name = 'cel' placeholder="Digite aqui (Obrigatório)" class="form-control" onkeypress="$(this).mask('(00) 0000-00009')" required>
+<br>
+<!-- Botão para enviar o formulário -->
+<button class="botao" type="submit" onclick="mostraAlert();">Enviar</button>
+<button class="botao" type="cancel" onclick="redirecionarCancel();">Cancelar</button>
+</div>
+</form>
+</body>
+<!--JavaScript-->
+<script src="js/alert.js"></script>
+<script src="js/alertcancel.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>
